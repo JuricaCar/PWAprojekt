@@ -1,8 +1,8 @@
-Po쉞ovani kolege,
+Po큄tovani kolege,
 
 Kako bi projekt radio potrebno je pokrenuti stranicu index.php koristeci XAMPP.
 
-Da to otvorite potrebno je izvr쉏ti sljedece korake
+Da to otvorite potrebno je izvr큄iti sljedece korake
 
       1. Poslanu mapu otpakirati i staviti u htdocs folder u xamppu
 
@@ -15,22 +15,41 @@ Da to otvorite potrebno je izvr쉏ti sljedece korake
 
 Opis
 
-Folder images sadr엍 slike koje su kori쉞ene na stranicama.
+Folder images sadr탑i slike koje su kori큄tene na stranicama.
 
-Folder Zadatak sadr엍 projektni zadatak koji sam dobio odnosno izgled clanka i izgled pocetne stranice
+Folder Zadatak sadr탑i projektni zadatak koji sam dobio odnosno izgled clanka i izgled pocetne stranice
 
-index.php pokazuje 3 clanka iz dvije kategorije (Sport i Politika) te ima navigaciju gdje se mo엁 doci do drugih stranica
+index.php pokazuje 3 clanka iz dvije kategorije (Sport i Politika) te ima navigaciju gdje se mo탑e doci do drugih stranica
 
-unos.html sadr엍 formu gdje korisnik mo엁 izraditi svoj clanak te kada klikne gumb posalji ode na stranicu unos.php koja pokazuje
-izgled tog clanka, taj clanak se sada mo엁 vidjeti na stranici kategorija.php odnosno u navigaciji je potrebno izabrati kategoriju
+unos.html sadr탑i formu gdje korisnik mo탑e izraditi svoj clanak te kada klikne gumb posalji ode na stranicu unos.php koja pokazuje
+izgled tog clanka, taj clanak se sada mo탑e vidjeti na stranici kategorija.php odnosno u navigaciji je potrebno izabrati kategoriju
 koju ste dodjelili clanku.
 
-registracija.php je stranica na koju se dode pomocu navigacije klikom na "REGISTRACIJA". Ta stranica sadr엍 formu za registraciju
+registracija.php je stranica na koju se dode pomocu navigacije klikom na "REGISTRACIJA". Ta stranica sadr탑i formu za registraciju
 te izradu racuna, cijela forma je validarana JavaScriptom te ako je korisnicko ime zauzeto onda nam forma javlja poruku.
 
 administracija.php je stranica na koju se potrebno ulogirati s korisnickim racunom, ako je razina u bazi podataka za
-korisnika 0 onda nemamo pristup stranici. Vrijednost razine je default 0, a mo엁 se jedino promjeniti u samoj bazi podataka.
-Ako korisnik ima razinu 1 onda dobiva pristup stranici gdje mo엁 uredivati svaki clanak te ih isto mo엁 i obrisati.
+korisnika 0 onda nemamo pristup stranici. Vrijednost razine je default 0, a mo탑e se jedino promjeniti u samoj bazi podataka.
+Ako korisnik ima razinu 1 onda dobiva pristup stranici gdje mo탑e uredivati svaki clanak te ih isto mo탑e i obrisati.
+
+
+
+Korisni훾ki ra훾uni za upotrebu:
+
+Korisni훾ko ime:test
+
+lozinka:test
+
+razina = 1
+
+
+Korisni훾ko ime:kiki
+
+lozinka:a
+
+razina = 0
+
+Ili napravite svoj korisni훾ki ra훾un pomo훶u registracije a razinu promjeniti u bazi podataka.
 
 
 
