@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="unosstyle.css" />
+    <title>Unos forme</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="list">
+            <li class="logo">
+                <img src="images/logo.png" class="img-fluid">
+            </li>
+            <li id="list_item1" class="listItem ListItem1"><a class="red" href="index.php">HOME</a></li>
+            <li id="list_item2" class="listItem"><a class="white" href="unos.html">FORMA</a></li>
+            <li id="list_item3" class="listItem"><a class="white" href="kategorija.php?id=Sport">SPORT</a></li>
+            <li id="list_item4" class="listItem"><a class="white" href="kategorija.php?id=Politika">POLITIKA</a></li>
+            <li id="list_item5" class="listItem"><a class="white" href="administracija.php">ADMINISTRACIJA</a></li>
+            <li id="list_item6" class="listItem"><a class="white" href="registracija.php">REGISTRACIJA</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="main">
+        <div class="forma">
+            <form method="post" action="unos.php" class="izgledforme">
+
+                <span id="porukaTitle" class="bojaPoruke"></span>
+                <label for="naslovvijesti">Naslov Vijesti</label>
+                <br /><br />
+
+                <input name="naslovvijesti" id="naslovvijesti" type="text"/>
+                <br /><br />
+
+                <span id="porukaAbout"class="bojaPoruke"></span>
+                <label for="krataksadrzajvijesti">Kratki sažetak vijesti</label>
+                <br /><br />
+
+                <textarea name = "krataksadrzajvijesti" id="krataksadrzajvijesti"></textarea>
+                <br /><br />
+
+                <span id="porukaContent"class="bojaPoruke"></span>
+                <label for="sadrzajvijesti">Sadržaj vijesti</label>
+                <br><br>
+
+                <textarea name = "sadrzajvijesti" id="sadrzajvijesti"></textarea>
+                <br><br>
+
+                <span id="porukaKategorija"class="bojaPoruke"></span>
+                <label for="kategorijavijesti">Odaberi kategoriju vijesti</label>
+                <br />
+
+                <select name="kategorijavijesti" id="kategorijavijesti">
+                    <option Value = "Politika">Politika</option>
+                    <option Value = "Sport">Sport</option>
+                </select>
+                <br /><br />
+
+                <span id="porukaSlika" class="bojaPoruke"></span>
+                <label for="pphoto">Slika: </label>
+                <br><br>
+
+                <input type ="file" accept="image/png, image/jpeg" class="input-text" name="pphoto" id="pphoto" />
+                <br /><br>
+
+                <label for ="obavijestda">Spremiti u arhivu:</label>
+                <br>
+                <input type = "checkbox" name = "obavijestda">
+                <label for ="obavijestda">Da</label>
+                <br /><br /><br />
+
+                <input name="submit" type="submit" id="submit" value="Posalji" />
+            </form>
+            
+            <script type="text/javascript">
+            // Validacija pomoću JavaScripta
+
+                document.getElementById("submit").onclick= function(event) {
+                    var slanjeForme = true;
+
+                    // Validacija naslova (5-30 znakova)
+                    var poljeTitle= document.getElementById("naslovvijesti");
+                    var title= document.getElementById("naslovvijesti").value;
+                    if(title.length< 5|| title.length> 30) {
+                        slanjeForme= false;
+                        poljeTitle.style.border="1px dashed red";
+                        document.getElementById("porukaTitle").innerHTML="Naslov vjesti mora imati između 5 i 30 znakova!<br>";
+                        } else {
+                            poljeTitle.style.border="1px solid green";
+                            document.getElementById("porukaTitle").innerHTML="";
+                        }
+                    
+                    // Validacija kratkog sadržaja (10-100 znakova)
+                    var poljeAbout= document.getElementById("krataksadrzajvijesti");
+                    var about= document.getElementById("krataksadrzajvijesti").value;
+                    if(about.length< 10|| about.length> 100) {
+                        slanjeForme= false;
+                        poljeAbout.style.border="1px dashed red";
+                        document.getElementById("porukaAbout").innerHTML="Kratki sadržaj mora imati između 10 i 100 znakova!<br>";
+                    } else {
+                        poljeAbout.style.border="1px solid green";
+                        document.getElementById("porukaAbout").innerHTML="";
+                    }
+
+                    // Validacija sadržaja (Mora biti unesen)
+                    var poljeContent= document.getElementById("sadrzajvijesti");
+                    var content= document.getElementById("sadrzajvijesti").value;
+                    if(content.length == 0) {
+                        slanjeForme= false;
+                        poljeContent.style.border="1px dashed red";
+                        document.getElementById("porukaContent").innerHTML="Sadržaj mora biti unesen!<br> ";
+                    } else {
+                        poljeContent.style.border="1px solid green";
+                        document.getElementById("porukaContent").innerHTML="";
+                    }
+
+                    // Validacija slike (Mora bit unesena)
+                    var poljeSlika= document.getElementById("pphoto");
+                    var pphoto= document.getElementById("pphoto").value;
+                    if(pphoto.length== 0) {
+                        slanjeForme= false;
+                        poljeSlika.style.border="1px dashed red";
+                        document.getElementById("porukaSlika").innerHTML="Slika mora biti unesena!<br>";
+                    } else {
+                        poljeSlika.style.border="1px solid green";
+                        document.getElementById("porukaSlika").innerHTML="";
+                    }
+
+
+
+                    if (slanjeForme != true) {
+                        event.preventDefault();
+                    }
+                };
+            </script>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p class="copyright">Copyright 2019 Morgenpost Verlag GmbH</p>
+        </footer>
+    </div>
+</body>
+</html>

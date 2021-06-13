@@ -1,0 +1,133 @@
+
+.navigation {
+    height: 14vh;
+    background-color: crimson;
+}
+
+
+ul {
+    list-style: none;
+    margin: 2%;
+    padding: 0;
+    padding-left: 20%;
+}
+
+li {
+    display: inline;
+    float: left;
+    color:white;
+  }
+
+  .listItem {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .logo {
+    height: 46px;
+    border-radius: 50%;
+    margin-top: -22px;
+
+  }
+
+ .ListItem1 {
+     background-color: white;
+     color:crimson;
+ }
+
+ nav a {
+    color:white;
+    text-decoration: none;
+}
+
+.red {
+    color:crimson;
+}
+
+body {
+    clear: both;
+    background-color: crimson;
+}
+
+.main {
+    clear: both;
+    width:50%;
+    height: auto;
+    background-color: whitesmoke;
+    margin:5%;
+    margin-left: 10%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.artikl {
+    margin:2%;
+    margin-top:2%;
+    background-color: white;
+}
+
+h1 {
+
+    margin:2%;
+}
+
+.datum {
+    margin:2%;
+    background-color: white;
+    height: 40px;
+}
+
+.img-clock {
+    width:2%;
+    float:left;
+    margin-left:10%;
+    padding:1%;
+}
+
+.date {
+    margin-left:15%;
+    padding:1%;
+}
+
+.img-artiklopened {
+    margin:2%;
+    width:96%;
+}
+
+.tekst {
+    padding:1%;
+    margin:2%;
+    margin-top:2%;
+    margin-bottom:2%;
+    background-color: white;
+}
+
+.sadrzaj {
+    margin:2%;
+}
+
+footer {
+    text-align:center;
+    padding: 3px;
+    height:50px;
+    background-color: grey;
+    color: white;
+}
+
+.copyright {
+    margin-top:15px;
+    margin-left:-20%;
+}
+
+
+
+  h2 {
+    margin: 2%;
+  }
+
+  .img-upload {
+    margin:2%;
+    width:50%;
+  }

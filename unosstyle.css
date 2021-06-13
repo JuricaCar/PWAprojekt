@@ -1,0 +1,85 @@
+.navigation {
+    height: 12vh;
+    background-color: crimson;
+}
+
+
+ul {
+    list-style: none;
+    margin: 2%;
+    padding: 0;
+    padding-left: 20%;
+}
+
+li {
+    display: inline;
+    float: left;
+    color:white;
+  }
+
+  .listItem {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .logo {
+    height: 46px;
+    border-radius: 50%;
+    margin-top: -22px;
+
+  }
+
+ .ListItem1 {
+     background-color: white;
+     color:crimson;
+ }
+
+ nav a {
+    color:white;
+    text-decoration: none;
+}
+
+.red {
+    color:crimson;
+}
+
+body {
+  clear: both;
+  background-color: crimson;
+}
+
+.forma {
+  clear: both;
+  margin: 3%;
+  padding: 3%;
+  width: 60%;
+  background-color: whitesmoke;
+}
+
+
+footer {
+  text-align:center;
+  padding: 3px;
+  height:50px;
+  background-color: grey;
+  color: white;
+}
+
+.copyright {
+  margin-top:15px;
+  margin-left:-20%;
+}
+
+.form-item {
+  padding:10px;
+}
+
+.form-field {
+  padding:10px;
+}
+
+.bojaPoruke {
+  color:red;
+}
